@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '1.4.0'
+}
+
+group 'org.bitsome'
+version '0.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+}
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version = '2019.1'
+}
+
+patchPluginXml {
+    untilBuild = '213.*'
+    changeNotes = """
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>"""
+}

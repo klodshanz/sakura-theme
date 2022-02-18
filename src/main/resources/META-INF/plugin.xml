@@ -1,0 +1,56 @@
+<idea-plugin>
+
+  <id>org.bitsome.blush</id>
+  <name>Sakura Theme (Dark)</name>
+  <version>1.0</version>
+  <vendor email="claus@ieee.org" url="http://bitsome.org">Bitsome</vendor>
+
+  <description><![CDATA[
+
+    <h1>Sakura Theme</h1>
+    <div style="background-color: #B94367; height: 6px; width: 100%"></div>
+  A dark theme in purple tones. For version 2019.1 and above. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci delectus error laboriosam libero molestias odio reiciendis veritatis? Culpa debitis doloribus harum iusto laboriosam nihil nulla, officiis possimus praesentium qui voluptas!
+    <br/>
+    This Theme is developed by Claus Ljunggren.
+    <div style="background-color: #B94367; height: 6px; width: 100%"></div>
+
+  To install:
+  <ul>
+  <li>Go to <i>Settings (Preferences) | Plugins</i>, find the theme plugin and install it</li>
+  <li>Restart IDE</li>
+  <li>Go to <i>Settings (Preferences) | Appearance & Behavior | Appearance</i> and see the <i>Theme</i> dropdown</li>
+  </ul>
+  <br/>
+
+    ]]></description>
+
+  <change-notes><![CDATA[
+  <h1>Version 1.0</h1>
+  <p>
+    This is the initial version with focus primarily on the languages I use most:
+    <ul>
+      <li>Python</li>
+      <li>HTML/CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </p>
+]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+<!--  <idea-version since-build="191.0"/>-->
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <themeProvider id="80d598e5-a45d-4129-b6aa-9bb73c5f67c4" path="/blush.theme.json"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
